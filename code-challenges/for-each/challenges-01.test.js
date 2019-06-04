@@ -9,8 +9,9 @@ Then, write a function named speaker that takes in a string and a callback funct
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
-  const newGreeting = word.toUpperCase();
-  return newGreeting;
+  // const newGreeting = word.toUpperCase();
+  // return newGreeting;
+  return word.toUpperCase();
 };
 
 const speaker = (message, callback) => {
@@ -92,19 +93,28 @@ This function should use forEach again, but rather than taking in a callback as 
 This anonymous function should accept up to three arguments: the element, the index, and the array.
 ------------------------------------------------------------------------------------------------ */
 
-const removeWithAnon = (arr) => {
-  arr.forEach(element => {
-    let anon = (element, arr) => {
-      if (element % 3 === 2){
-        arr.pop();
-      }
-      return arr;
-    };
-    anon(element, arr);
-    return arr;
+const removeWithAnon = (array) => {
+  array.forEach((element, _, arr) => { //second spot is index, need to pass it in even if we are not using it, so we can use the array. Can use _ to take up space.
+    if (element % 3 === 2){
+      arr.pop();
+    }
   });
-  return arr;
+  return array;
 };
+
+// const removeWithAnon = (arr) => {
+//   arr.forEach(element => {
+//     let anon = (element, arr) => {
+//       if (element % 3 === 2){
+//         arr.pop();
+//       }
+//       return arr;
+//     };
+//     anon(element, arr);
+//     return arr;
+//   });
+//   return arr;
+// };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
