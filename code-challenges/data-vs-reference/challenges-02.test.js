@@ -62,7 +62,7 @@ setStatusAsAuthor(people);
 console.log(people[1].isAuthor) prints true
 ------------------------------------------------------------------------------------------------ */
 
-const setStatusAsAuthor = (people) => {
+const setStatusAsAuthor = people => {
   people.forEach(obj => {
     obj.isAuthor = true;
   });
