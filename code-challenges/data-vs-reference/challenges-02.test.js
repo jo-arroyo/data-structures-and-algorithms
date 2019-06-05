@@ -26,8 +26,8 @@ console.log(a) prints [1, 2, 3, 1]
 ------------------------------------------------------------------------------------------------ */
 
 const appendFirstToLast = (arr) => {
-  const newArr = arr.push(arr[0]);
-  // arr = arr.push(arr[0]);
+  // const newArr = arr.push(arr[0]);
+  arr = arr.push(arr[0]);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -63,7 +63,9 @@ console.log(people[1].isAuthor) prints true
 ------------------------------------------------------------------------------------------------ */
 
 const setStatusAsAuthor = (people) => {
-  // Solution code here...
+  people.forEach(obj => {
+    obj.isAuthor = true;
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -125,7 +127,7 @@ describe('Testing challenge 3', () => {
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   test('It should add a property to every object in an array', () => {
     const a = [{ fullName: 'Octavia Butler' }, { fullName: 'Ray Bradbury' }, { fullName: 'Kurt Vonnegut' }];
     setStatusAsAuthor(a);
