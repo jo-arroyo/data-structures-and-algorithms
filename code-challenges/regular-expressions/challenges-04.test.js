@@ -27,7 +27,7 @@ Return an array containing all the matches.
 
 const isCapitalized = (str) => { //RETURNS TWO ARRAYS??
   let returnArr = [];
-  const regex = /([A-Z]\w+)/g;
+  const regex = /(^[A-Z]\w+)/g;
   returnArr.push(str.match(regex));
   return returnArr;
 };
@@ -62,7 +62,14 @@ Do not use the vertical bar (pipe) in your pattern.
 ------------------------------------------------------------------------------------------------ */
 
 const matchMonth = (input) => {
-  // Solution code here...
+  const regex = /^[Oo]ct$/g;
+  const REGEX = /^[Oo]ctober$/g;
+
+  if(regex.test(input)){
+    return true;
+  } else if (REGEX.test(input)){
+    return true;
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -165,7 +172,7 @@ describe('Testing challenge 3', () => {
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   test('It should match any of the acceptable inputs', () => {
     expect(matchMonth('Oct')).toBeTruthy();
     expect(matchMonth('oct')).toBeTruthy();
