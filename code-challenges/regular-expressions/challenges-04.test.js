@@ -13,7 +13,7 @@ For example:
 ------------------------------------------------------------------------------------------------ */
 
 const isNum = (input) => {
-  let regex = /\d/g;
+  const regex = /\d/g;
   return regex.test(input);
 };
 
@@ -25,8 +25,11 @@ Write a function named isCapitalized that takes in a string. This function shoul
 Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
-const isCapitalized = (str) => {
-  // Solution code here...
+const isCapitalized = (str) => { //RETURNS TWO ARRAYS??
+  let returnArr = [];
+  const regex = /([A-Z]\w+)/g;
+  returnArr.push(str.match(regex));
+  return returnArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -36,7 +39,14 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 ------------------------------------------------------------------------------------------------ */
 
 const citiesAtoJ = (arr) => {
-  // Solution code here...
+  let returnArr = [];
+  arr.forEach(element => {
+    const regex = /(^[A-J])/g;
+    if (regex.test(element) === true){
+      returnArr.push(element);
+    }
+  });
+  return returnArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -139,7 +149,7 @@ xdescribe('Testing challenge 2', () => {
   });
 });
 
-xdescribe('Testing challenge 3', () => {
+describe('Testing challenge 3', () => {
   let cities = ['Cleveland', 'San Diego', 'Birmingham', 'Seattle', 'Miami', 'New York City', 'Omaha', 'Portland', 'Austin', 'Boston', 'Newport Beach', 'Hoboken'];
 
   test('It should return the cities whose names begin with the letters A through J', () => {
