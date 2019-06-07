@@ -25,11 +25,14 @@ Write a function named isCapitalized that takes in a string. This function shoul
 Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
-const isCapitalized = (str) => { //RETURNS TWO ARRAYS??
-  let returnArr = [];
-  const regex = /(^[A-Z]\w+)/g;
-  returnArr.push(str.match(regex));
-  return returnArr;
+const isCapitalized = (str) => {
+  let regex = /\b(\w*[A-Z]\w*)\b/g;
+  let stringArray = str.match(regex);
+  if (stringArray === null){
+    return [];
+  } else {
+    return stringArray;
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -82,8 +85,11 @@ For example, if given the string "Hello, and have a wonderful day!", the word "H
 The expected output of "Hello, and have a wonderful day!" is ["and ", "have ", "a ", "wonderful "].
 ------------------------------------------------------------------------------------------------ */
 
-const noPunctuation = str => {
-  // Solution code here...
+const noPunctuation = str => { //TODO:
+  let arr = [];
+  const regex = /\w+\s/g;
+  let wordArr = arr.push(str.match(regex));
+  return wordArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -143,7 +149,7 @@ describe('Testing challenge 1', () => {
   });
 });
 
-xdescribe('Testing challenge 2', () => {
+describe('Testing challenge 2', () => {
   test('It should only return words that begin with a capital letter', () => {
     const capitalResult = isCapitalized('We only want to Return the Words that begin With a capital Letter');
 
