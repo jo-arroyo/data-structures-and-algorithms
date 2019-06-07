@@ -85,11 +85,9 @@ For example, if given the string "Hello, and have a wonderful day!", the word "H
 The expected output of "Hello, and have a wonderful day!" is ["and ", "have ", "a ", "wonderful "].
 ------------------------------------------------------------------------------------------------ */
 
-const noPunctuation = str => { //TODO:
-  let arr = [];
+const noPunctuation = str => {
   const regex = /\w+\s/g;
-  let wordArr = arr.push(str.match(regex));
-  return wordArr;
+  return str.match(regex);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -104,7 +102,7 @@ The function should return a string containing the consonants in their original 
 For example, 'Welcome to Code 301!' will return 'W_lc_m_ t_ C_d_ 301!'.
 ------------------------------------------------------------------------------------------------ */
 
-let hangman = (str) => {
+let hangman = (str) => { //TODO:
   // Solution code here...
 };
 
@@ -196,7 +194,7 @@ describe('Testing challenge 4', () => {
   });
 });
 
-xdescribe('Testing challenge 5', () => {
+describe('Testing challenge 5', () => {
   const lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia vel massa sed egestas. Nunc faucibus iaculis elit, a scelerisque enim condimentum sed. Aenean ac scelerisque sem, et pharetra diam.';
 
   test('It should only return words that are immediately followed by a space', () => {
