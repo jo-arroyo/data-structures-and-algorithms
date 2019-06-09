@@ -153,22 +153,15 @@ For example:
 ------------------------------------------------------------------------------------------------ */
 
 const removeEvenValues = (arr) => {
-// for (var i = 0; i < arr.length; i++){
-//   if(arr[i] === (/[2468]/)){
-//     arr.splice(i, 1);
-//   } else if (arr[i] === (/\d[02468]/)){
-//     arr.splice(i, 1);
-//   } 
-//   // return arr;
-// }
-//   for (var i = 0; i < arr.length; i++){ //CONTINUE TO WORK ON THIS
-//     if(arr[i] === 2 || arr[i] === 4 || arr[i] === 6 || arr[i] === 8){
-//       arr.splice(i, 1);
-//     } else if (arr[i] === ){
-//       arr.splice(i, 1);
-//     }
-//   }
-//   return arr;
+  let regex1 = /\d[24680]/;
+  for (var i = 0; i < arr.length; i++){
+    if (arr[i] === 2 || arr[i] === 4 || arr[i] === 6 || arr[i] === 8){
+      arr.splice(i, 1);
+    } else if (regex1.test(arr[i]) === true){
+      arr.splice(i, 1);
+    }
+  }
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -300,7 +293,7 @@ describe('Testing challenge 5', () => {
   });
 });
 
-xdescribe('Testing challenge 6', () => {
+describe('Testing challenge 6', () => {
   test('It should remove the even numbers from the array', () => {
     let list = [1, 2, 3, 4, 5, 6];
     removeEvenValues(list);
