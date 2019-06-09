@@ -153,7 +153,22 @@ For example:
 ------------------------------------------------------------------------------------------------ */
 
 const removeEvenValues = (arr) => {
-  // Solution code here...
+// for (var i = 0; i < arr.length; i++){
+//   if(arr[i] === (/[2468]/)){
+//     arr.splice(i, 1);
+//   } else if (arr[i] === (/\d[02468]/)){
+//     arr.splice(i, 1);
+//   } 
+//   // return arr;
+// }
+//   for (var i = 0; i < arr.length; i++){ //CONTINUE TO WORK ON THIS
+//     if(arr[i] === 2 || arr[i] === 4 || arr[i] === 6 || arr[i] === 8){
+//       arr.splice(i, 1);
+//     } else if (arr[i] === ){
+//       arr.splice(i, 1);
+//     }
+//   }
+//   return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -172,7 +187,13 @@ removeLastCharacters('Gregor', 9) returns ''
 ------------------------------------------------------------------------------------------------ */
 
 const removeLastCharacters = (str, numberOfCharacters) => {
-  // Solution code here...
+  if (str.length > numberOfCharacters && numberOfCharacters > 0){
+    let num = 0 - numberOfCharacters;
+    str = str.slice(0, num);
+  } else if (str.length <= numberOfCharacters){
+    str = '';
+  }
+  return str;
 };
 
 
