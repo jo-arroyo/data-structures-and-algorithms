@@ -81,11 +81,6 @@ const gruffaloCrumble = {
 
 const listFoods = (recipe) => {
   let result = [];
-  // let ingList = recipe.ingredients;
-  // let noNum = [];
-  // ingList.forEach(listItem => {
-  //   noNum.push(listItem.slice(2));
-  // });
   recipe.ingredients.forEach(item => {
     if (item.includes('medium-sized')){
       result.push(item.slice(15));
@@ -112,7 +107,16 @@ You may also use other string or array methods.
 
 const splitFoods = (recipe) => {
   let result = [];
-  // Solution code here...
+  recipe.ingredients.forEach(item => {
+    let newItem =[];
+    if (item.includes('-')){
+      newItem = item.split(' ');
+      result.push(newItem[2]);
+    } else {
+      newItem = item.split(/\d\s\w+\s/);
+      result.push(newItem[1]);
+    }
+  });
   return result;
 };
 
@@ -244,7 +248,7 @@ describe('Testing challenge 3', () => {
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   test('It should return a list of foods', () => {
     expect(splitFoods(gruffaloCrumble)).toStrictEqual(['Gruffalo', 'oats', 'brown sugar', 'flour', 'pure maple syrup', 'chopped nuts', 'baking soda', 'baking powder', 'cinnamon', 'melted butter', 'fresh water']);
   });
