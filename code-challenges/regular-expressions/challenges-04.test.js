@@ -13,8 +13,10 @@ For example:
 ------------------------------------------------------------------------------------------------ */
 
 const isNum = (input) => {
-  const regex = /\d/g;
-  return regex.test(input);
+  // const regex = /\d/g;
+  // return regex.test(input); //This is my original way of writing it
+
+  return /\d/.test(input); //This is a better way to write it
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -33,6 +35,10 @@ const isCapitalized = (str) => {
   } else {
     return stringArray;
   }
+  // .match runs on a string and takes in the regex
+  // returns null if no match is found
+
+  // return str.match(/[A-Z][a-zA-Z]*/g || []; SHORTHAND WAY
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -73,6 +79,8 @@ const matchMonth = (input) => {
   } else if (REGEX.test(input)){
     return true;
   }
+
+  // return /^[Oo]ct(ober)?$/.test(input); SHORTHAND WAY
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -88,6 +96,8 @@ The expected output of "Hello, and have a wonderful day!" is ["and ", "have ", "
 const noPunctuation = str => {
   const regex = /\w+\s/g;
   return str.match(regex);
+
+  // return str.match(/\w+\b\s/g) SHORTHAND
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -103,8 +113,12 @@ For example, 'Welcome to Code 301!' will return 'W_lc_m_ t_ C_d_ 301!'.
 ------------------------------------------------------------------------------------------------ */
 
 let hangman = (str) => {
+  
   let regex = /[aeiou]/gi;
   return str.replace(regex, '_');
+
+  // return str.match(/[aeiou]/gi); SHORTHAND?
+  // return str.match(/(a|e|i|o|u)/gi, '_') SHORTHAND
 };
 
 /* ------------------------------------------------------------------------------------------------
