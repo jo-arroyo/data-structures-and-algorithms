@@ -153,14 +153,28 @@ For example:
 ------------------------------------------------------------------------------------------------ */
 
 const removeEvenValues = (arr) => {
-  let regex1 = /\d[24680]/;
-  for (var i = 0; i < arr.length; i++){
-    if (arr[i] === 2 || arr[i] === 4 || arr[i] === 6 || arr[i] === 8){
-      arr.splice(i, 1);
-    } else if (regex1.test(arr[i]) === true){
-      arr.splice(i, 1);
+  // let regex1 = /\d[24680]/; //DIDNT WORK BECAUSE OF SPLICE BUG
+  // for (var i = 0; i < arr.length; i++){
+  //   if (arr[i] === 2 || arr[i] === 4 || arr[i] === 6 || arr[i] === 8){
+  //     arr.splice(i, 1);
+  //   } else if (regex1.test(arr[i]) === true){
+  //     arr.splice(i, 1);
+  //   }
+  // }
+  // return arr;
+
+  // for (var i = 0; i < arr.length; i++){ // DIDN'T WORK BECAUSE OF SPLICE BUG
+  //   if (arr[i] % 2 === 0){
+  //     arr.splice(i, 1);
+  //   }
+  // }
+
+  for (var z = arr.length - 1; z >= 0; z--){
+    if (arr[z] % 2 === 0){
+      arr.splice(z, 1)
     }
   }
+
   return arr;
 };
 
