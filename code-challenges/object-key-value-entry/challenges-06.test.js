@@ -101,7 +101,6 @@ const hasChildrenValues = (arr, character) => {
       }
     }
   });
-
   return answer;
 };
 
@@ -114,7 +113,18 @@ The input and output of this function are the same as the input and output from 
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenEntries = (arr, character) => {
-  // Solution code here...
+  let answer;
+  Object.entries(arr).forEach(entry => {
+    let personInfo = Object.values(entry[1]);
+    if (personInfo[0] === character){
+      if (personInfo[2].length < 1){
+        answer = false;
+      } else {
+        answer = true;
+      }
+    }
+  });
+  return answer;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -201,7 +211,7 @@ describe('Testing challenge 3', () => {
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   test('It should return true for characters that have children', () => {
     expect(hasChildrenEntries(characters, 'Eddard')).toBeTruthy();
   });
