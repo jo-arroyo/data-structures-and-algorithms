@@ -8,10 +8,7 @@ Write a function named oddValues that, given an array of integers as input, uses
 For example, oddValues([1,2,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
 
-const oddValues = (arr) => {
-  let odds = arr.filter(n => (n%2))
-  return odds;
-};
+const oddValues = (arr) => arr.filter(n => (n%2));
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -25,8 +22,7 @@ For example, filterStringsWithVowels('gregor','hound','xyz') returns ['gregor', 
 
 
 const filterStringsWithVowels = (arr) => {
-  let wordsWithVowels = arr.filter(word => word.match(/[aeiou]/));
-  return wordsWithVowels;
+  return arr.filter(word => word.match(/[aeiou]/));
 };
 
 
@@ -39,12 +35,7 @@ For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 ------------------------------------------------------------------------------------------------ */
 
 const notInFirstArray = (forbiddenValues, arr) => {
-  let valuesNotInFirstArray = arr.filter(element => {
-    if (!forbiddenValues.includes(element)){
-      return element;
-    }
-  })
-  return valuesNotInFirstArray;
+  return arr.filter(n => (!forbiddenValues.includes(n)));
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -87,12 +78,7 @@ const snorlaxData = {
 };
 
 const getBaseStatGreaterThan = (arr, minBaseStat) => {
-  let baseStats = arr.filter(element => {
-    if (element.baseStat > minBaseStat){
-      return element;
-    }
-  })
-  return baseStats;
+  return arr.filter(element => (element.baseStat > minBaseStat));
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -166,8 +152,7 @@ const characters = [
 ];
 
 const getCharactersWithoutChildren = (arr) => {
-  let childless = arr.filter(person => !person.children);
-  return childless;
+  return arr.filter(person => !person.children);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -179,19 +164,14 @@ For example: evenOddNumericValues(['Gregor', 2, 4, 1]) returns ['even', 'even', 
 ------------------------------------------------------------------------------------------------ */
 
 const evenOddNumericValues = (arr) => {
-  let numbers = arr.filter(element => {
-    if (Number.isInteger(element)){
-      return element;
-    }
-  })
-  let evenOdds = numbers.map(number => {
-    if (number % 2 ===0){
+  let numbers = arr.filter(element => (Number.isInteger(element)));
+  return numbers.map(number => {
+    if (number % 2 === 0){
       return 'even';
     } else {
       return 'odd';
     }
   });
-  return evenOdds;
 };
 
 /* ------------------------------------------------------------------------------------------------
