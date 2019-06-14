@@ -88,7 +88,11 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 ------------------------------------------------------------------------------------------------ */
 
 const reversedString = (str) => {
-  // Solution code here...
+  let stringy = str.split('');
+  let reverseStr = stringy.reduce((acc, val) => {
+    return val + acc;
+  }, '');
+  return reverseStr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -257,7 +261,7 @@ describe('Testing challenge 2', () => {
   });
 });
 
-xdescribe('Testing challenge 3', () => {
+describe('Testing challenge 3', () => {
   test('It should return the string with the characters in reverse order', () => {
     expect(reversedString('Code 301')).toStrictEqual('103 edoC');
   });
