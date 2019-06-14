@@ -72,7 +72,11 @@ let starWarsData = [{
 }];
 
 const returnNames = (arr) => {
-  // Solution code here...
+  let nameArray = arr.reduce ((acc, val) => {
+    acc.push(val.name);
+    return acc;
+  }, []);
+  return nameArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -246,7 +250,7 @@ describe('Testing challenge 1', () => {
   });
 });
 
-xdescribe('Testing challenge 2', () => {
+describe('Testing challenge 2', () => {
   test('It should return an array continaing the names of the characters', () => {
     expect(returnNames(starWarsData)).toStrictEqual([ 'Luke Skywalker', 'C-3PO', 'R2-D2', 'Darth Vader', 'Leia Organa' ]);
     expect(returnNames(starWarsData).length).toStrictEqual(5);
