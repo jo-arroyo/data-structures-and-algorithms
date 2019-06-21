@@ -84,7 +84,16 @@ let starWarsData = [{
 }];
 
 let biggerThanLuke = (arr) => {
-  // Solution code here...
+  let newArr = arr.filter(person => {
+    if (parseInt(person.mass) > 77){
+      return person;
+    }
+  });
+  let nameString = newArr.reduce((acc, val) => {
+    acc = `${acc}${val.name} - `;
+    return acc;
+  }, '');
+  return nameString.slice(0, -3);
 };
 
 /* ------------------------------------------------------------------------------------------------
