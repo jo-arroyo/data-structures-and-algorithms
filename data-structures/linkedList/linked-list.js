@@ -35,7 +35,6 @@ class LinkedList {
     let current = this.head;
     let myString = '';
     while(current !== null){
-      // myString = `${myString} ${current.value}`;
       myString = myString + current.value;
       current = current.next;
     }
