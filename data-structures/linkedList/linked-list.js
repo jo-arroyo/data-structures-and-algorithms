@@ -19,12 +19,27 @@ class LinkedList {
 
   }
 
-  includes(){
-
+  includes(input){
+    let current = this.head;
+    while(current !== null){
+      if(current.value === input){
+        return true;
+      }
+      current = current.next;
+    }
+    return false;
   }
 
-  toString(){
 
+  toString(){
+    let current = this.head;
+    let myString = '';
+    while(current !== null){
+      // myString = `${myString} ${current.value}`;
+      myString = myString + current.value;
+      current = current.next;
+    }
+    return myString;
   }
 }
 

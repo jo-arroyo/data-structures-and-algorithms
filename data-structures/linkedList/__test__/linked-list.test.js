@@ -33,18 +33,30 @@ describe('Linked Lists', () => {
     expect(linkedList.head.next.next.value).toEqual('a');
     expect(linkedList.head.next.next.next).toEqual(null);
   });
+
+  test('Will return true when finding a value within the linked list that exists', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(1);
+    linkedList.insert(2);
+    linkedList.insert(3);
+    expect(linkedList.includes(1)).toEqual(true);
+    expect(linkedList.includes(3)).toEqual(true);
+  });
+
+  test('Will return false when searching for a value in the linked list that does not exist', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(1);
+    linkedList.insert(2);
+    linkedList.insert(3);
+    expect(linkedList.includes('a')).toEqual(false);
+    expect(linkedList.includes(null)).toEqual(false);
+  });
+
+  test('Can properly return a collection of all the values that exist in the linked list', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert('Beans');
+    linkedList.insert('Carrots');
+    linkedList.insert('Potatoes');
+    expect(linkedList.toString()).toEqual('PotatoesCarrotsBeans');
+  });
 });
-
-/*
-*
-*
-
-Will return true when finding a value within the linked list that exists
-Will return false when searching for a value in the linked list that does not exist
-Can properly return a collection of all the values that exist in the linked list
-*
-*
-*
-*
-*
-* */
