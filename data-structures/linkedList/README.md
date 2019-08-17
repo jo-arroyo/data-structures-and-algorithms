@@ -1,11 +1,17 @@
 # Singly Linked List
-<!-- Short summary or background information -->
+A linked list is a linked data structure with a set of sequentially linked records, called nodes. 
 
 ## Challenge
-<!-- Description of the challenge -->
+Create a linked list class, with the following methods:
+* Insert a node at the head
+* Check to see if the linked list includes an inputted value
+* Print all the nodes in a string
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+* When inserting, achieved O(n) by identifying the head and rerouting. Does not require traversal.
+* When checking includes and printing to a string, traversal mean that it was O(n) value. Needed traversal to reach multiple nodes in the linked list.
 
 ## API
-<!-- Description of each method publicly available to your Linked List -->
+* Insert - Identified and rerouted new node and head node - O(1)
+* Includes - Traversed linked list to check if current value matches input value - O(n)
+* toString - Traversed linked list, adding current value to existing string - O(n)
