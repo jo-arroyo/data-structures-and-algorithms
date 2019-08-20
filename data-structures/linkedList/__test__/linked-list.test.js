@@ -59,4 +59,62 @@ describe('Linked Lists', () => {
     linkedList.insert('Potatoes');
     expect(linkedList.toString()).toEqual('PotatoesCarrotsBeans');
   });
+
+  test('Can successfully add a node to the end of the linked list', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(1);
+    linkedList.insert(2);
+    linkedList.append(3);
+    expect(linkedList.head.next.next.value).toEqual(3);
+    expect(linkedList.head.next.next.next).toEqual(null);
+  });
+
+  test('Can successfully add multiple nodes to the end of a linked list', () => {
+    const linkedList = new LinkedList();
+    linkedList.append('a');
+    linkedList.append('b');
+    linkedList.append('c');
+    expect(linkedList.head.value).toEqual('a');
+    expect(linkedList.head.next.value).toEqual('b');
+    expect(linkedList.head.next.next.value).toEqual('c');
+    expect(linkedList.head.next.next.next).toEqual(null);
+  });
+
+  test('Can successfully insert a node before a node located i the middle of a linked list', () => {
+    const linkedList = new LinkedList();
+    linkedList.append(3);
+    linkedList.append(5);
+    linkedList.append(7);
+    linkedList.insertBefore(5, 4);
+    expect(linkedList.head.next.value).toEqual(4);
+    expect(linkedList.head.next.next.value).toEqual(5);
+  });
+
+  test('Can successfully insert a node before the first node of a linked list', () => {
+    const linkedList = new LinkedList();
+    linkedList.append(3);
+    linkedList.insertBefore(3, 2);
+    expect(linkedList.head.value).toEqual(2);
+    expect(linkedList.head.next.value).toEqual(3);
+  });
+
+  test('Can successfully insert after a node in the middle of the linked list', () => {
+    const linkedList = new LinkedList();
+    linkedList.append(1);
+    linkedList.append(3);
+    linkedList.append(5);
+    linkedList.insertAfter(3, 4);
+    expect(linkedList.head.next.value).toEqual(3);
+    expect(linkedList.head.next.next.value).toEqual(4);
+  });
+
+  test('Can successfully insert a node after the last node of the linked list', () => {
+    const linkedList = new LinkedList();
+    linkedList.append(1);
+    linkedList.append(2);
+    linkedList.insertAfter(2, 3);
+    expect(linkedList.head.next.value).toEqual(2);
+    expect(linkedList.head.next.next.value).toEqual(3);
+    expect(linkedList.head.next.next.next).toEqual(null);
+  });
 });
