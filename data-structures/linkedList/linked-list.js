@@ -40,6 +40,22 @@ class LinkedList {
     }
     return myString;
   }
+
+  append(value){
+    if(this.head === null){
+      this.head = new Node(value);
+    } else {
+      this.appendHelper(value, this.head);
+    }
+  }
+
+  appendHelper(value, current){
+    if(current.next === null){
+      current.next = new Node(value);
+      return;
+    }
+    this.appendHelper(value, current.next);
+  }
 }
 
 module.exports = LinkedList;

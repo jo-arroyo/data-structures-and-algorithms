@@ -59,4 +59,25 @@ describe('Linked Lists', () => {
     linkedList.insert('Potatoes');
     expect(linkedList.toString()).toEqual('PotatoesCarrotsBeans');
   });
+
+  test('Can successfully add a node to the end of the linked list', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(1);
+    linkedList.insert(2);
+    linkedList.append(3);
+    expect(linkedList.head.next.next.value).toEqual(3);
+    expect(linkedList.head.next.next.next).toEqual(null);
+  });
+
+  test('Can successfully add multiple nodes to the end of a linked list', () => {
+    const linkedList = new LinkedList();
+    linkedList.append('a');
+    linkedList.append('b');
+    linkedList.append('c');
+    expect(linkedList.head.value).toEqual('a');
+    expect(linkedList.head.next.value).toEqual('b');
+    expect(linkedList.head.next.next.value).toEqual('c');
+    expect(linkedList.head.next.next.next).toEqual(null);
+
+  });
 });
