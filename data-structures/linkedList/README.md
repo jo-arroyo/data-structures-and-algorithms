@@ -9,6 +9,8 @@ Create a linked list class, with the following methods:
 * Append a node to the tail of the list
 * Insert a node before a specified value
 * Insert a node after a specified value
+* Find the value from the end of a linked list
+* Find the middle node from a linked list
 
 ## Approach & Efficiency
 * When inserting, achieved O(n) by identifying the head and rerouting. Does not require traversal.
@@ -22,4 +24,7 @@ Create a linked list class, with the following methods:
 * append - If list had only one node, added node. If list had more than one, traversed list until the final node - O(n)
 * insertBefore - Traversed linked list, references to two nodes, added node if second reference was the specified value - O(n)
 * insertAfter - Traversed linked list. If referenced node matched value, inserted new node after - O(n)
-![Whiteboard Image](./../../assets/ll_insertions.jpg)
+![Whiteboard Image - Append and Insert](./../../assets/ll_insertions.jpg)
+* getKFromEnd - Set two pointers, one moves one node at a time, the other moves k amount each time - O(n) time and space
+* findMiddle - Set two points, one moves one node, other moves two nodes - O(n) time and space
+![Whiteboard Image - kth from end](./../../assets/ll_kth_from_end.jpg)
