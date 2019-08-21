@@ -98,6 +98,33 @@ class LinkedList {
     insert.next = first.next;
     first.next = insert;
   }
+
+  getKFromEnd(k){
+    let first = this.head;
+    let second = this.head;
+    for(let i = 0; i < k; i++){
+      if(second === null || second.next === null){
+        return 'Invalid k';
+      } else {
+        second = second.next;
+      }
+    }
+    while(second.next !== null){
+      first = first.next;
+      second = second.next;
+    }
+    return first.value;
+  }
+
+  findMiddle(){
+    let slow = this.head;
+    let fast = this.head;
+    while (fast.next && fast.next.next){
+      slow = slow.next;
+      fast = fast.next.next;
+    }
+    return slow;
+  }
 }
 
 module.exports = LinkedList;
