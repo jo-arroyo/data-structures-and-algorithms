@@ -18,6 +18,9 @@
 * [Array methods](./code-challenges/includesSubstrCharAt)
 * [Combination](./code-challenges/301-review)
 * [Array Reverse](./code-challenges/arrayReverse)
+* [Tic Tac Toe Winner](./code-challenges/tic-tac-toe)
 
 #### Data Structures
-* [Linked lists](./data-structures/linkedList)
+* [Linked Lists](./data-structures/linkedList)
+* [Linked List Insertions](./data-structures/linkedList)
+* [Linked List kth From End](./data-structures/linkedList)
