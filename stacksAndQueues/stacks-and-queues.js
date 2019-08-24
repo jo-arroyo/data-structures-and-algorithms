@@ -13,22 +13,6 @@ class LinkedList {
   }
 }
 
-// append(value){
-//   if(this.head === null){
-//     this.head = new Node(value);
-//   } else {
-//     this.appendHelper(value, this.head);
-//   }
-// }
-//
-// appendHelper(value, current){
-//   if(current.next === null){
-//     current.next = new Node(value);
-//     return;
-//   }
-//   this.appendHelper(value, current.next);
-// }
-
 class Stack {
   constructor(){
     this.storage = new LinkedList();
@@ -50,6 +34,14 @@ class Stack {
     this.top = this.top.next;
     record.next = null;
     return record;
+  }
+
+  peek(){
+    if(this.top){
+      return this.top.value;
+    } else {
+      return null;
+    }
   }
 }
 
