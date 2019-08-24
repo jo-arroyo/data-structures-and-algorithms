@@ -2,7 +2,7 @@
 
 let {Stack, Queue, StackAlt, QueueAlt} = require('../stacks-and-queues');
 
-xdescribe('Stacks with Linked List', () => {
+describe('Stacks with Linked List', () => {
   test('Can successfully push onto a stack', () => {
     const testStack = new Stack;
     testStack.push(2);
@@ -59,7 +59,7 @@ xdescribe('Stacks with Linked List', () => {
   });
 });
 
-xdescribe('Queues with Linked List', () => {
+describe('Queues with Linked List', () => {
   test('Can successfully enqueue into a queue', () => {
     const testQueue = new Queue;
     testQueue.enqueue(10);
@@ -117,7 +117,7 @@ xdescribe('Queues with Linked List', () => {
   });
 });
 
-xdescribe('Stacks with Arrays', () => {
+describe('Stacks with Arrays', () => {
   test('Can successfully push onto a stack', () => {
     const testStack = new StackAlt;
     testStack.push(2);
@@ -177,8 +177,8 @@ describe('Queues with Arrays', () => {
   test('Can successfully enqueue into a queue', () => {
     const testQueue = new QueueAlt;
     testQueue.enqueue(10);
-    expect(testQueue.front.value).toEqual(10);
-    expect(testQueue.front.next).toEqual(null);
+    expect(testQueue.front).toEqual(10);
+    expect(testQueue.size).toEqual(1);
   });
 
   test('Can successfully enqueue multiple values into a queue', () => {
@@ -186,21 +186,20 @@ describe('Queues with Arrays', () => {
     testQueue.enqueue(10);
     testQueue.enqueue(20);
     testQueue.enqueue(30);
-    expect(testQueue.front.value).toEqual(10);
-    expect(testQueue.front.next.value).toEqual(20);
-    expect(testQueue.front.next.next.value).toEqual(30);
-    expect(testQueue.back.value).toEqual(30);
-    expect(testQueue.front.next.next.next).toEqual(null);
+    expect(testQueue.front).toEqual(10);
+    expect(testQueue.back).toEqual(30);
+    expect(testQueue.size).toEqual(3);
   });
 
   test('Can successfully dequeue out of a queue the expected value', () => {
     const testQueue = new QueueAlt;
     testQueue.enqueue(10);
     testQueue.enqueue(20);
+    testQueue.enqueue(30);
     let returned = testQueue.dequeue();
     expect(returned).toEqual(10);
-    expect(testQueue.front.value).toEqual(20);
-    expect(testQueue.front.next).toEqual(null);
+    expect(testQueue.front).toEqual(20);
+    expect(testQueue.size).toEqual(2);
   });
 
   test('Can successfully peek into a queue, seeing the expected value', () => {
@@ -221,7 +220,7 @@ describe('Queues with Arrays', () => {
     testQueue.dequeue();
     let returned = testQueue.dequeue();
     expect(returned).toEqual(30);
-    expect(testQueue.front).toEqual(null);
+    expect(testQueue.front).toEqual(undefined);
   });
 
   test('Can successfully instantiate an empty queue', () => {

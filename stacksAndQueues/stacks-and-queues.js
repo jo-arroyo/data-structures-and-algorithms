@@ -106,19 +106,34 @@ class QueueAlt {
     this.storage = [];
     this.front = null;
     this.back = null;
-    this.size = null;
+    this.size = this.storage.length;
   }
 
   enqueue(value){
-
+    this.storage.push(value);
+    this.front = this.storage[0];
+    this.back = this.storage[this.storage.length - 1];
+    this.size = this.storage.length;
   }
 
   dequeue(){
-
+    if(this.storage.length === 0){
+      return null;
+    } else {
+      let returned = this.storage.shift();
+      this.front = this.storage[0];
+      this.back = this.storage[this.storage.length - 1];
+      this.size = this.storage.length;
+      return returned;
+    }
   }
 
   peek(){
-
+    if(this.storage.length === 0){
+      return null;
+    } else {
+      return this.storage[0];
+    }
   }
 }
 
