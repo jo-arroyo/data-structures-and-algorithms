@@ -7,15 +7,8 @@ class Node {
   }
 }
 
-class LinkedList {
-  constructor(){
-    this.head = null;
-  }
-}
-
 class Stack {
   constructor(){
-    this.storage = new LinkedList();
     this.top = null;
   }
 
@@ -46,8 +39,87 @@ class Stack {
 }
 
 class Queue {
+  constructor(){
+    this.front = null;
+    this.back = null;
+  }
 
+  enqueue(value){
+    let newest = new Node(value);
+    if(!this.front){
+      this.front = newest;
+      this.back = newest;
+    } else {
+      this.back.next = newest;
+      this.back = newest;
+    }
+  }
+
+  dequeue(){
+    let returned = this.front;
+    this.front = this.front.next;
+    returned.next = null;
+    return returned.value;
+  }
+
+  peek(){
+    if(this.front){
+      return this.front.value;
+    } else {
+      return null;
+    }
+  }
 }
 
+class StackAlt {
+  constructor(){
+    this.storage = [];
+    this.size = this.storage.length;
+    this.top = null;
+  }
 
-module.exports = {Node, Stack, Queue};
+  push(value){
+    this.storage.push(value);
+    this.top = this.storage[this.storage.length -1];
+    this.size = this.size + 1;
+  }
+
+  pop(){
+    let returned = this.storage[this.storage.length -1];
+    this.storage.pop();
+    this.size = this.size -1;
+    this.top = this.storage[this.storage.length -1];
+    return returned;
+  }
+
+  peek(){
+    if(this.top){
+      return this.top;
+    } else {
+      return null;
+    }
+  }
+}
+
+class QueueAlt {
+  constructor(){
+    this.storage = [];
+    this.front = null;
+    this.back = null;
+    this.size = null;
+  }
+
+  enqueue(value){
+
+  }
+
+  dequeue(){
+
+  }
+
+  peek(){
+
+  }
+}
+
+module.exports = {Stack, Queue, StackAlt, QueueAlt};
