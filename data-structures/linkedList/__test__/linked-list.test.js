@@ -198,4 +198,38 @@ describe('Linked Lists', () => {
       expect(linkedList.findMiddle().value).toEqual(2);
     });
   });
+
+  describe('Reversing a linked list', () => {
+    test('Can reverse a linked list which contains one node', () => {
+      const linkedList = new LinkedList();
+      linkedList.append(1);
+      linkedList.reverse();
+      expect(linkedList.head.value).toEqual(1);
+    });
+
+    test('Can reverse a linked list which contains two nodes', () => {
+      const linkedList = new LinkedList();
+      linkedList.append(1);
+      linkedList.append(2);
+      linkedList.reverse();
+      expect(linkedList.head.value).toEqual(2);
+      expect(linkedList.head.next.value).toEqual(1);
+      expect(linkedList.head.next.next).toEqual(null);
+    });
+
+    test('Can reverse a linked list in place', () => {
+      const linkedList = new LinkedList();
+      linkedList.append(1);
+      linkedList.append(2);
+      linkedList.append(3);
+      linkedList.append(4);
+      linkedList.reverse();
+      expect(linkedList.head.value).toEqual(4);
+      expect(linkedList.head.next.value).toEqual(3);
+      expect(linkedList.head.next.next.value).toEqual(2);
+      expect(linkedList.head.next.next.next.value).toEqual(1);
+      expect(linkedList.head.next.next.next.next).toEqual(null);
+    });
+  });
 });
+

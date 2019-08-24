@@ -125,6 +125,25 @@ class LinkedList {
     }
     return slow;
   }
+
+  reverse(){
+    if(this.head.next === null){
+      return this.head;
+    } else {
+      let last = this.head;
+      let middle = this.head.next;
+      let first = this.head.next.next;
+      last.next = null;
+      while (first !== null) {
+        middle.next = last;
+        last = middle;
+        middle = first;
+        first = first.next;
+      }
+      middle.next = last;
+      this.head = middle;
+    }
+  }
 }
 
 module.exports = LinkedList;

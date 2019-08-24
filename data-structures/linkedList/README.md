@@ -11,11 +11,14 @@ Create a linked list class, with the following methods:
 * Insert a node after a specified value
 * Find the value from the end of a linked list
 * Find the middle node from a linked list
+* Reversing a linked list in place
 
 ## Approach & Efficiency
 * When inserting, achieved O(n) by identifying the head and rerouting. Does not require traversal.
 * When checking includes and printing to a string, traversal mean that it was O(n) value. Needed traversal to reach multiple nodes in the linked list.
 * Insert nodes at the end, or before or after a value also required traversal.
+* Finding a value kth from end or the middle of the linked list also requires traversal.
+* Reversing a linked list in place also requires traversal and reassigning three variables.
 
 ## Solution
 * Insert - Identified and rerouted new node and head node - O(1)
@@ -28,3 +31,5 @@ Create a linked list class, with the following methods:
 * getKFromEnd - Set two pointers, one moves one node at a time, the other moves k amount each time - O(n) time and space
 * findMiddle - Set two points, one moves one node, other moves two nodes - O(n) time and space
 ![Whiteboard Image - kth from end](./../../assets/ll_kth_from_end.jpg)
+* reverse - Set three variables, while traversing, reassigns the next of one of the variables - O(n) time
+![Whiteboard Image - Reverse](./../../assets/ll_reverse.jpg)
