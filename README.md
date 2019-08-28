@@ -19,11 +19,12 @@
 * [Combination](./code-challenges/301-review)
 * [Array Reverse](./code-challenges/arrayReverse)
 * [Tic Tac Toe Winner](./code-challenges/tic-tac-toe)
-* [Queue with Stacks](./code-challenges/queueWithStacks)
 
 #### Data Structures
 * [Linked Lists](./data-structures/linkedList)
 * [Linked List Insertions](./data-structures/linkedList)
 * [Linked List kth From End](./data-structures/linkedList)
 * [Linked List reverse](./data-structures/linkedList)
+* [Linked List merge](./code-challenges/llMerge)
 * [Stacks and Queues](./stacksAndQueues)
+* [Queue with Stacks](./code-challenges/queueWithStacks)
