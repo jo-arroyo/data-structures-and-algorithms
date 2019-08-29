@@ -19,6 +19,7 @@
 * [Combination](./code-challenges/301-review)
 * [Array Reverse](./code-challenges/arrayReverse)
 * [Tic Tac Toe Winner](./code-challenges/tic-tac-toe)
+* [Validate multiple brackets](./code-challenges/multiBracketValidation)
 
 #### Data Structures
 * [Linked Lists](./data-structures/linkedList)
