@@ -26,6 +26,8 @@
 * [Linked List Insertions](./data-structures/linkedList)
 * [Linked List kth From End](./data-structures/linkedList)
 * [Linked List reverse](./data-structures/linkedList)
+* [Stacks and Queues](./stacksAndQueues)
 * [Linked List merge](./code-challenges/llMerge)
 * [Stacks and Queues](./stacksAndQueues)
 * [Queue with Stacks](./code-challenges/queueWithStacks)
+* [Find Leaves on Binary Tree](./code-challenges/findLeaves)
