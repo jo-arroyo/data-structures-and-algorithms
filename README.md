@@ -27,3 +27,4 @@
 * [Linked List kth From End](./data-structures/linkedList)
 * [Linked List reverse](./data-structures/linkedList)
 * [Stacks and Queues](./stacksAndQueues)
+* [Find Leaves on Binary Tree](./code-challenges/findLeaves)
