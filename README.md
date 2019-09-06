@@ -31,3 +31,4 @@
 * [Stacks and Queues](./stacksAndQueues)
 * [Queue with Stacks](./code-challenges/queueWithStacks)
 * [Find Leaves on Binary Tree](./code-challenges/findLeaves)
+* [Find Path Length on Binary Tree](./code-challenges/findPathLength)
