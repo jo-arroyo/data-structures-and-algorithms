@@ -20,6 +20,7 @@
 * [Array Reverse](./code-challenges/arrayReverse)
 * [Tic Tac Toe Winner](./code-challenges/tic-tac-toe)
 * [Validate multiple brackets](./code-challenges/multiBracketValidation)
+* [Repeated Word in String](./code-challenges/repeatedWord)
 
 #### Data Structures
 * [Linked Lists](./data-structures/linkedList)
