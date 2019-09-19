@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee51b8c4-a9d4-43be-94cd-e83e60d7bc1c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/findLeaves.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/__tests__/find-leaves.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../data-structures/binaryTrees/.idea/binaryTrees.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../data-structures/binaryTrees/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../data-structures/binaryTrees/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../data-structures/binaryTrees/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../data-structures/binaryTrees/__tests__/tree.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../data-structures/binaryTrees/node.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../data-structures/binaryTrees/tree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data-structures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-structures/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1567650002097</updated>
       <workItem from="1567650003161" duration="1806000" />
+      <workItem from="1568767501991" duration="560000" />
     </task>
     <servers />
   </component>
@@ -72,7 +76,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

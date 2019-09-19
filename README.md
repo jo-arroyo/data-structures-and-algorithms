@@ -20,6 +20,7 @@
 * [Array Reverse](./code-challenges/arrayReverse)
 * [Tic Tac Toe Winner](./code-challenges/tic-tac-toe)
 * [Validate multiple brackets](./code-challenges/multiBracketValidation)
+* [Repeated Word in String](./code-challenges/repeatedWord)
 
 #### Data Structures
 * [Linked Lists](./data-structures/linkedList)
@@ -31,4 +32,4 @@
 * [Stacks and Queues](./stacksAndQueues)
 * [Queue with Stacks](./code-challenges/queueWithStacks)
 * [Binary Tree - Find leaves](./code-challenges/findLeaves)
-* [Binary Tree - Find Path Length](./code-challenges/findPathLength)
+* [Binary Tree - Find Maximum Value](./data-structures/binaryTrees)
