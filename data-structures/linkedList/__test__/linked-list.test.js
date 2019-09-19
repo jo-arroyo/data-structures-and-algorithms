@@ -231,5 +231,40 @@ describe('Linked Lists', () => {
       expect(linkedList.head.next.next.next.next).toEqual(null);
     });
   });
+
+  describe('Removing duplicates from linked list', () => {
+    test('returns null if no linked list instantiated', () => {
+      const linkedList = new LinkedList();
+      expect(linkedList.head).toEqual(null);
+    });
+
+    test('returns head if only one node', () => {
+      const linkedList = new LinkedList();
+      linkedList.append(1);
+      let returnedValue = linkedList.removeDuplicates();
+      expect(linkedList.head.value).toEqual(1);
+      expect(returnedValue.value).toEqual(1);
+    });
+
+    test('returns last node if it traverses through the list and there are no duplicates', () => {
+      const linkedList = new LinkedList();
+      linkedList.append(1);
+      linkedList.append(2);
+      linkedList.append(3);
+      linkedList.append(4);
+      linkedList.append(5);
+      let returnedValue = linkedList.removeDuplicates();
+      expect(returnedValue.value).toEqual(5);
+    });
+
+    test('returns second to last node value if last node is a duplicate', () => {
+      const linkedList = new LinkedList();
+      linkedList.append(3);
+      linkedList.append(1);
+      linkedList.append(3);
+      let returnedValue = linkedList.removeDuplicates();
+      expect(returnedValue.value).toEqual(1);
+    });
+  });
 });
 
