@@ -12,6 +12,7 @@ Create a linked list class, with the following methods:
 * Find the value from the end of a linked list
 * Find the middle node from a linked list
 * Reversing a linked list in place
+* Remove duplicates from a linked list
 
 ## Approach & Efficiency
 * When inserting, achieved O(n) by identifying the head and rerouting. Does not require traversal.
@@ -19,6 +20,7 @@ Create a linked list class, with the following methods:
 * Insert nodes at the end, or before or after a value also required traversal.
 * Finding a value kth from end or the middle of the linked list also requires traversal.
 * Reversing a linked list in place also requires traversal and reassigning three variables.
+* Removing duplicates require assigning two variables and using a hash set to store values already seen
 
 ## Solution
 * Insert - Identified and rerouted new node and head node - O(1)
@@ -33,3 +35,8 @@ Create a linked list class, with the following methods:
 ![Whiteboard Image - kth from end](./../../assets/ll_kth_from_end.jpg)
 * reverse - Set three variables, while traversing, reassigns the next of one of the variables - O(n) time
 ![Whiteboard Image - Reverse](./../../assets/ll_reverse.jpg)
+* removeDuplicates
+   * Traverse through linked list - O(n) time
+   * Hash set to store values seen - O(n) space
+   * Set.add and set.has - O(1) space
+![Whiteboard Image - remove Duplicates](../../assets/ll_remove_duplicates.jpg)

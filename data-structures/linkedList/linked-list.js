@@ -144,6 +144,30 @@ class LinkedList {
       this.head = middle;
     }
   }
+
+  removeDuplicates(){
+    if(!this.head || !this.head.next){
+      return this.head;
+    }
+    let set = new Set();
+    let root = this.head;
+    let current = root.next;
+    set.add(root.value);
+    while(root.next && root.next.next){
+      if (set.has(current.value)){
+        root.next = root.next.next;
+      } else {
+        set.add(current.value);
+        root = root.next;
+      }
+    }
+    if(set.has(root.next.value)){
+      root.next = null;
+    } else {
+      root = root.next;
+    }
+    return root;
+  }
 }
 
 module.exports = LinkedList;
