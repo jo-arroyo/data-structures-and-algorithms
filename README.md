@@ -5,7 +5,7 @@
 #### Code challenges
 * [forEach](./code-challenges/for-each)
 * [Data vs. reference](./code-challenges/data-vs-reference)
-* [Sort](./code-challenges/Sort)
+* [Sort](./code-challenges/sort)
 * [Regular Expressions](./code-challenges/regular-expressions)
 * [String Methods](./code-challenges/split-join-slice-splice)
 * [Objects](./code-challenges/object-key-value-entry)
