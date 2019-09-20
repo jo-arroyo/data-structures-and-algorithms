@@ -20,7 +20,7 @@ class LinkedList {
     }
   }
 
-  // WORK ON THIS
+  // TODO: WORK ON THIS
   removeDuplicates(){
     if(!this.head || !this.head.next){
       return this.head;
