@@ -29,7 +29,7 @@
 * [Linked List - Reverse](./data-structures/linkedList)
 * [Linked List - Remove duplicates](./data-structures/linkedList)
 * [Linked List - Merge](./code-challenges/llMerge)
-* [Stacks and Queues](./stacksAndQueues)
+* [Stacks and Queues](./data-structures/stacksAndQueues)
 * [Queue with Stacks](./code-challenges/queueWithStacks)
 * [Binary Tree - Find leaves](./code-challenges/findLeaves)
 * [Binary Tree - Find Maximum Value](./data-structures/binaryTrees)
