@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61d4ab77-6dba-481d-9bce-c824d1df9784" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/binaryTrees.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/__tests__/tree.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../code-challenges/findLeaves/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../code-challenges/findLeaves/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +42,7 @@
       <option name="presentableId" value="Default" />
       <updated>1568767557532</updated>
       <workItem from="1568767558624" duration="2355000" />
+      <workItem from="1569022924890" duration="88000" />
     </task>
     <servers />
   </component>
@@ -62,7 +54,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
