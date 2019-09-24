@@ -33,3 +33,4 @@
 * [Queue with Stacks](./code-challenges/queueWithStacks)
 * [Binary Tree - Find leaves](./code-challenges/findLeaves)
 * [Binary Tree - Find Maximum Value](./data-structures/binaryTrees)
+* [Binary Tree - Find Union and Intersection](./code-challenges/treeIntersection)

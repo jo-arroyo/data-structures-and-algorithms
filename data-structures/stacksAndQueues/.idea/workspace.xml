@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="13db0655-73bf-4b9c-b50b-5b6873a2adfd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../code-challenges/multiBracketValidation/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../code-challenges/multiBracketValidation/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../code-challenges/multiBracketValidation/.idea/multiBracketValidation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../code-challenges/multiBracketValidation/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../code-challenges/multiBracketValidation/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../code-challenges/multiBracketValidation/__tests__/multi-bracket-validation.test.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1PqJ5ShsAlMggNHTK6jZLctC8Ie" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Node.js.stacks-and-queues.test.js">
+    <configuration name="stacks-and-queues.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="stacks-and-queues.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="stacks-and-queues.test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="stacks-and-queues.test.js" working-dir="$PROJECT_DIR$/__tests__">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.stacks-and-queues.test.js" />
+        <item itemvalue="Node.js.stacks-and-queues.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="13db0655-73bf-4b9c-b50b-5b6873a2adfd" name="Default Changelist" comment="" />
+      <created>1566595509578</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566595509578</updated>
+      <workItem from="1566595510769" duration="10939000" />
+      <workItem from="1566835660026" duration="1465000" />
+      <workItem from="1566877664289" duration="1010000" />
+      <workItem from="1567044744776" duration="1591000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

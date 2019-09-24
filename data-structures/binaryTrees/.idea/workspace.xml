@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61d4ab77-6dba-481d-9bce-c824d1df9784" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../code-challenges/treeIntersection/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../code-challenges/treeIntersection/__tests__/tree-intersection.test.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +44,7 @@
       <updated>1568767557532</updated>
       <workItem from="1568767558624" duration="2355000" />
       <workItem from="1569022924890" duration="88000" />
+      <workItem from="1569362063172" duration="28000" />
     </task>
     <servers />
   </component>
