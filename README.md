@@ -34,3 +34,4 @@
 * [Binary Tree - Find leaves](./code-challenges/findLeaves)
 * [Binary Tree - Find Maximum Value](./data-structures/binaryTrees)
 * [Binary Tree - Find Union and Intersection](./code-challenges/treeIntersection)
+* [Binary Tree - Find Height](./data-structures/binaryTrees)
