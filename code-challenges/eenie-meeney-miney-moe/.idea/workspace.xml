@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ec291d3-01dc-41f7-b413-f2e55704fec4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/eenie-meeney-miney-moe.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/__tests__/emmm.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/emmm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data-structures/linkedList/linked-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-structures/linkedList/linked-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__tests__/emmm.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data-structures/binaryTrees/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-structures/binaryTrees/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data-structures/binaryTrees/__tests__/tree.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-structures/binaryTrees/__tests__/tree.test.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +44,7 @@
       <option name="presentableId" value="Default" />
       <updated>1569548923424</updated>
       <workItem from="1569548924530" duration="1168000" />
+      <workItem from="1569906963301" duration="82000" />
     </task>
     <servers />
   </component>
@@ -59,7 +56,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
