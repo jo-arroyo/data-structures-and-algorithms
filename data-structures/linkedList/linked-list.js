@@ -16,7 +16,6 @@ class LinkedList {
       newHead.next = this.head;
       this.head = newHead;
     }
-
   }
 
   includes(input){
