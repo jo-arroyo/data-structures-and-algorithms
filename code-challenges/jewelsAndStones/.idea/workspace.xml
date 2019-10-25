@@ -6,6 +6,7 @@
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/jewels-and-stones.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/jewels-and-stones.test.js" afterDir="false" />
     </list>
@@ -46,7 +47,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571963180429</updated>
-      <workItem from="1571963181835" duration="815000" />
+      <workItem from="1571963181835" duration="1052000" />
     </task>
     <servers />
   </component>
