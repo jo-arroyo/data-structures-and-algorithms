@@ -49,4 +49,39 @@ const invertTree = (node) => {
   return node;
 };
 
+// Checking for balanced tree - Jacob's demo
+// Time O(n2) Space O(n)
+const isTreeBalanced = (node) => {
+  // Handle leaves being passed down
+  if (node === null){
+    return true;
+  }
+
+  let leftHeight;
+  let rightHeight;
+
+  leftHeight = height(node.left);
+  rightHeight = height (node.right);
+
+  // Comparing heights and making sure they are in acceptable range
+  // Recursively checking children
+  if (Math.abs(leftHeight - rightHeight) <= 1
+    && isTreeBalanced(node.left)
+    && isTreeBalanced(node.right)){
+    return true;
+  }
+
+  return false;
+};
+
+const height = (node) => {
+  let count = 0;
+  if (node === null) {
+    return count;
+  }
+  //Since height is longest path to leaf
+  //Return longest path
+  return ((count + 1) + Math.max(height(node.left), height(node.right)));
+};
+
 module.exports = {Tree, findMaxValue, findHeight, invertTree};
