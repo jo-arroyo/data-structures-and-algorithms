@@ -13,12 +13,22 @@ describe('String Permutation Function', () => {
     expect(printPermutations(test)).toEqual([]);
   });
 
-  test('Returns permutations of string', () => {
-    const test = 'abc';
-    expect(printPermutations(test)).toEqual(['abc', 'bca', 'cab', 'bac', 'acb', 'cba']);
+  test('Returns array with string in it if string is a single letter', () => {
+    const test = 'a';
+    expect(printPermutations(test)).toEqual(['a']);
   });
 
-  test('Does not return duplicates of permuations', () => {
+  test('Returns permutations of string with two characters', () => {
+    const test = 'jo';
+    expect(printPermutations(test)).toEqual(['jo', 'oj']);
+  });
+
+  test('Returns permutations of string', () => {
+    const test = 'abc';
+    expect(printPermutations(test)).toEqual(['abc', 'bac', 'cab', 'acb', 'bca', 'cba']);
+  });
+
+  xtest('Does not return duplicates of permutations', () => {
     const test = 'bab';
     expect(printPermutations(test)).toEqual(['bab', 'abb', 'bba']);
   });
