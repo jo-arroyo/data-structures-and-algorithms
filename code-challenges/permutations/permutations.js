@@ -11,10 +11,6 @@ const printPermutations = (string) => {
     return permutations;
   }
 
-  // if (string.length === 1){
-  //   permutations.push(string);
-  //   return permutations
-  // }
   const stringArray = string.split('');
 
   permutationHelper(string.length, stringArray, permutations);
