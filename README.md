@@ -23,6 +23,8 @@
 * [Repeated Word in String](./code-challenges/repeatedWord)
 * [Left Join in Hash Map](./code-challenges/leftJoin)
 * [Flood fill](./code-challenges/floodFill)
+* [Roman Numeral to Integer](./code-challenges/romanToInt)
+* [Jewels and Stones](./code-challenges/jewelsAndStones)
 
 #### Data Structures
 * [Linked Lists](./data-structures/linkedList)
