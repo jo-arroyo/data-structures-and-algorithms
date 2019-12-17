@@ -30,4 +30,4 @@ const mergeLists = (listA, listB) => {
   }
 };
 
-module.exports = {LinkedList, mergeLists};
+module.exports = mergeLists;
