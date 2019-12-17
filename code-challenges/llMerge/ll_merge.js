@@ -1,29 +1,5 @@
 'use strict';
 
-class Node {
-  constructor(value){
-    this.value = value;
-    this.next = null;
-  }
-}
-
-class LinkedList {
-  constructor(){
-    this.head = null;
-  }
-
-  insert(value){
-    const newHead = new Node(value);
-
-    if(this.head === null){
-      this.head = newHead;
-    } else {
-      newHead.next = this.head;
-      this.head = newHead;
-    }
-  }
-}
-
 const mergeLists = (listA, listB) => {
   if(listA.head === null){
     return listB;
@@ -54,4 +30,4 @@ const mergeLists = (listA, listB) => {
   }
 };
 
-module.exports = {LinkedList, mergeLists};
+module.exports = mergeLists;

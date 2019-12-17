@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-
-    <list default="true" id="6a9bbe1f-690f-432d-b0c1-39f32e4f01cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jewelsAndStones.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jewels-and-stones.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jewels-and-stones.test.js" afterDir="false" />
-    </list>
+    <list default="true" id="ab96c150-b508-4fa5-94a2-09e41f70bf8a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +11,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="1Sfmm9OILzRKjlS67O7gS8xjBFk" />
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/doublyLinkedList.iml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1StzS6T0r5ysy2oBwtLUuMxlYo8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -43,12 +45,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6a9bbe1f-690f-432d-b0c1-39f32e4f01cf" name="Default Changelist" comment="" />
-      <created>1571963180429</created>
+      <changelist id="ab96c150-b508-4fa5-94a2-09e41f70bf8a" name="Default Changelist" comment="" />
+      <created>1572397677249</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1571963180429</updated>
-      <workItem from="1571963181835" duration="1118000" />
+      <updated>1572397677249</updated>
+      <workItem from="1572397679868" duration="2280000" />
     </task>
     <servers />
   </component>

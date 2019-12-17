@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-
-    <list default="true" id="6a9bbe1f-690f-432d-b0c1-39f32e4f01cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jewelsAndStones.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jewels-and-stones.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jewels-and-stones.test.js" afterDir="false" />
+    <list default="true" id="707e1155-f7cf-448b-a409-caaa6c3b6be7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../findPathLength/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../findPathLength/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,10 +13,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="1Sfmm9OILzRKjlS67O7gS8xjBFk" />
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/romanToInt.iml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Uu7F51aP30QrGhb6GOkhPwq7uZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunDashboard">
@@ -43,12 +46,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6a9bbe1f-690f-432d-b0c1-39f32e4f01cf" name="Default Changelist" comment="" />
-      <created>1571963180429</created>
+      <changelist id="707e1155-f7cf-448b-a409-caaa6c3b6be7" name="Default Changelist" comment="" />
+      <created>1576194520145</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1571963180429</updated>
-      <workItem from="1571963181835" duration="1118000" />
+      <updated>1576194520145</updated>
+      <workItem from="1576194522569" duration="1021000" />
     </task>
     <servers />
   </component>
