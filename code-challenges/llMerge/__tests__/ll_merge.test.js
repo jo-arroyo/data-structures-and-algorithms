@@ -1,6 +1,7 @@
 'use strict';
 
-const {LinkedList, mergeLists} = require('../ll_merge');
+const LinkedList = require('../LinkedList');
+const mergeLists = require('../ll_merge');
 
 describe('Merging linked lists', () => {
   test('Returns first list if second list is null', () => {
