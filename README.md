@@ -31,6 +31,7 @@
 * [Linked List - Reverse](./data-structures/linkedList)
 * [Linked List - Remove duplicates](./data-structures/linkedList)
 * [Linked List - Merge](./code-challenges/llMerge)
+* [Linked List - Merge Sorted](./code-challenges/llMerge)
 * [Stacks and Queues](./data-structures/stacksAndQueues)
 * [Queue with Stacks](./code-challenges/queueWithStacks)
 * [Binary Tree - Find leaves](./code-challenges/findLeaves)
