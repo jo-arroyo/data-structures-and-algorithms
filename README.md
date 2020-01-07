@@ -26,7 +26,7 @@
 * [Roman Numeral to Integer](./code-challenges/romanToInt)
 * [Jewels and Stones](./code-challenges/jewelsAndStone)
 * [Array Majority Element](./code-challenges/majorityElement)
-
+* [Happy Number](./code-challenges/happyNumber)
 
 #### Data Structures
 * [Linked Lists](./data-structures/linkedList)
