@@ -31,6 +31,7 @@
 - [Count Primes](./code-challenges/countPrimes)
 - [Reorder Data in Log Files](./code-challenges/reorderDataLogFiles)
 - [Trapping rainwater](./code-challenges/trappingRainwater)
+- [Valid Anagram](./code-challenges/validAnagram)
 
 #### Data Structures
 
