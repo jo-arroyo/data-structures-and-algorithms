@@ -30,6 +30,7 @@
 - [Happy Number](./code-challenges/happyNumber)
 - [Count Primes](./code-challenges/countPrimes)
 - [Reorder Data in Log Files](./code-challenges/reorderDataLogFiles)
+- [Trapping rainwater](./code-challenges/trappingRainwater)
 
 #### Data Structures
 
