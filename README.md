@@ -32,6 +32,7 @@
 - [Reorder Data in Log Files](./code-challenges/reorderDataLogFiles)
 - [Trapping rainwater](./code-challenges/trappingRainwater)
 - [Valid Anagram](./code-challenges/validAnagram)
+- [Non-decreasing Array](./code-challenges/nonDecreasingArray)
 
 #### Data Structures
 
