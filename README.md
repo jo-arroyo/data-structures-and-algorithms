@@ -35,6 +35,7 @@
 - [Valid Anagram](./code-challenges/validAnagram)
 - [Non-decreasing Array](./code-challenges/nonDecreasingArray)
 - [String to Integer atoi](./code-challenges/stringToIntegerAtoi)
+- [Three sum](./code-challenges/threeSum)
 
 #### Data Structures
 
