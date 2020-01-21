@@ -25,6 +25,7 @@
 - [Left Join in Hash Map](./code-challenges/leftJoin)
 - [Flood fill](./code-challenges/floodFill)
 - [Roman Numeral to Integer](./code-challenges/romanToInt)
+- [Integer to Roman Numeral](./code-challenges/intToRoman)
 - [Jewels and Stones](./code-challenges/jewelsAndStone)
 - [Array Majority Element](./code-challenges/majorityElement)
 - [Happy Number](./code-challenges/happyNumber)
@@ -33,6 +34,7 @@
 - [Trapping rainwater](./code-challenges/trappingRainwater)
 - [Valid Anagram](./code-challenges/validAnagram)
 - [Non-decreasing Array](./code-challenges/nonDecreasingArray)
+- [String to Integer atoi](./code-challenges/stringToIntegerAtoi)
 
 #### Data Structures
 
